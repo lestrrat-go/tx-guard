@@ -40,7 +40,7 @@ import (
 	"database/sql"
 	"fmt"
 
-	gsg "github.com/lestrrat/go-simple-guard"
+	gsg "github.com/lestrrat-go/simple-guard"
 	"github.com/pkg/errors"
 )
 

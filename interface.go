@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"sync"
 
-	gsg "github.com/lestrrat/go-simple-guard"
+	gsg "github.com/lestrrat-go/simple-guard"
 )
 
 // DB wraps a sql.DB object.

@@ -3,7 +3,7 @@ package guard_test
 import (
 	"testing"
 
-	guard "github.com/lestrrat/go-tx-guard"
+	guard "github.com/lestrrat-go/tx-guard"
 	_ "github.com/mattn/go-sqlite3"
 )
 

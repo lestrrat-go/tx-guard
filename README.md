@@ -1,10 +1,10 @@
-# go-tx-guard
+# tx-guard
 
 Simple database transaction guard
 
-[![Build Status](https://travis-ci.org/lestrrat/go-tx-guard.png?branch=master)](https://travis-ci.org/lestrrat/go-tx-guard)
+[![Build Status](https://travis-ci.org/lestrrat-go/tx-guard.png?branch=master)](https://travis-ci.org/lestrrat-go/tx-guard)
 
-[![GoDoc](https://godoc.org/github.com/lestrrat/go-tx-guard?status.svg)](https://godoc.org/github.com/lestrrat/go-tx-guard)
+[![GoDoc](https://godoc.org/github.com/lestrrat-go/tx-guard?status.svg)](https://godoc.org/github.com/lestrrat-go/tx-guard)
 
 # SYNOPSIS
 
@@ -12,7 +12,7 @@ Simple database transaction guard
 import (
   "database/sql"
 
-  "github.com/lestrrat/go-tx-guard"
+  "github.com/lestrrat-go/tx-guard"
 )
 
 func main() {
@@ -42,3 +42,6 @@ early from a method performing an SQL transaction operation. This small
 wrapper creates transaction objects that have an `AutoRollback` method that
 you can safely register to a `defer` statement so that in case of errors
 `Rollback` gets called.
+
+Note that as of Go 1.7 which introduced the use of context.Context, this sort
+of hack is no longer required.
